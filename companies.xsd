@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Companies" type="CompaniesType"/>
+  <xs:complexType name="employeesType">
+    <xs:sequence>
+      <xs:element type="xs:dateTime" name="birthday"/>
+      <xs:element type="xs:string" name="lastname"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="surname"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="companyType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:dateTime" name="dateOfCreation"/>
+      <xs:element type="xs:string" name="status"/>
+      <xs:element type="employeesType" name="employees"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CompaniesType">
+    <xs:sequence>
+      <xs:element type="companyType" name="company"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Companies>
+    <company>
+        <name>NN</name>
+        <dateOfCreation>2023-08-05T02:32:10.260+04:00</dateOfCreation>
+        <status>true</status>
+        <employees>
+            <birthday>2023-08-05T02:32:10.260+04:00</birthday>
+            <lastname>Smith</lastname>
+            <name>Tim</name>
+            <surname>Lala</surname>
+        </employees>
+    </company>
+</Companies>
